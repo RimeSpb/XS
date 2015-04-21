@@ -1,0 +1,8 @@
+[run]
+source = XS
+omit = XS/wsgi.py,XS/urls.py,XS/startup.py,XS/settings*
+branch = true
+
+[report]
+omit = XS/wsgi.py,XS/urls.py,XS/startup.py,XS/settings*
+
