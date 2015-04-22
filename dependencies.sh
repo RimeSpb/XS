@@ -11,11 +11,10 @@ apt-get install -y python-pip
 apt-get install -y libjpeg zlib postgresql libmysqlclient
 apt-get install -y libjpeg-dev libfreetype6-dev zlib1g-dev
 easy_install -U pip
-pip install djangocms-installer
-pip install Django
-pip install --upgrade --force-reinstall pillow
-pip install django-registration-redux
+pip install requests[security]
+pip install Django==1.7.4
 pip install Pinax
+pip install -r prj/XS/requirements.txt
 
 if ! [ -L /var/www ]; then
       rm -rf /var/www
